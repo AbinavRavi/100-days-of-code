@@ -6,21 +6,20 @@ enum States{
     Kerala,
 }
 
-fn match_language(state:States) -> &'static str{
+fn match_language(state:States){
     match state{
-        States::TamilNadu => "Tamil",
-        States::AndhraPradesh => "Telugu",
-        States::Kerala => "Malayalam",
-        States::Telangana => "Telugu",
-        States::Karnataka => "Kannada",
-        _ => "Some Other language",
+        States::TamilNadu => println!("Tamil"),
+        States::AndhraPradesh => println!("Telugu"),
+        States::Kerala => println!("Malayalam"),
+        States::Telangana => println!("Telugu"),
+        States::Karnataka => println!("Kannada"),
+        _ => println!("Some Other language"),
     };
 }
 
 fn main() {
     let state:States = States::TamilNadu;
-
-    let language = match_language(state);
+    match_language(state);
 
     // println!("IN {:?} the official language is {:?}",state,language);
 

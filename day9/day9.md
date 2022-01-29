@@ -1,8 +1,7 @@
 # Day 9 of 100
 
 ## Challenge
-
-Basics of enum and pattern matching and a small example to demonstrate that
+Common Data structures using rust, Vector, Hashmap and String
 
 ## Application 
  
